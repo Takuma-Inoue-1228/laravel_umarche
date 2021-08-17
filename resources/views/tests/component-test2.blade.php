@@ -1,5 +1,7 @@
 <x-tests.app>
   <x-slot name="header">ヘッダー2</x-slot>
   コンポーネントテスト2
-  <x-tests.card title="たいとる" content="ほんぶん" />
+  <x-test-class-base classBaseMessage="メッセージです" />
+  <div class="mb-4"></div>
+  <x-test-class-base classBaseMessage="メッセージです" defalutMessage="初期値から変更しています" />
 </x-tests.app>
