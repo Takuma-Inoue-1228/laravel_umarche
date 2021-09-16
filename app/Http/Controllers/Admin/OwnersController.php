@@ -20,7 +20,7 @@ class OwnersController extends Controller
     public function index()
     {
         $owners = Owner::select('id', 'name', 'email', 'created_at')
-        ->paginate(3);
+        ->paginate(5);
         
         return view(
             'admin.owners.index',
