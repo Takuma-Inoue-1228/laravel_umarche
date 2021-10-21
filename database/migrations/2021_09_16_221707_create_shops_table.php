@@ -22,7 +22,7 @@ class CreateShopsTable extends Migration
             $table->string('name');
             $table->text('information');
             $table->string('filename');
-            $table->boolean('is_seling');
+            $table->boolean('is_selling');
             $table->timestamps();
         });
     }
