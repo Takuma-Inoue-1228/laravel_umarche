@@ -58,11 +58,11 @@ class ProductController extends Controller
      */
     public function create()
     {
-        $shops = Shop::Where('owner_id', Auth::id())
+        $shops = Shop::where('owner_id', Auth::id())
         ->select('id', 'name')
         ->get();
 
-        $images = Image::Where('owner_id', Auth::id())
+        $images = Image::where('owner_id', Auth::id())
         ->select('id', 'title', 'filename')
         ->orderBy('updated_at', 'desc')
         ->get();
@@ -82,7 +82,7 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        dd($request);
     }
 
     /**
