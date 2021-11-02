@@ -63,7 +63,6 @@ class OwnersController extends Controller
                     'password' => Hash::make($request->password),
                 ]);
 
-
                 Shop::create([
                     'owner_id' => $owner->id,
                     'name' => '店名を入力してください',
