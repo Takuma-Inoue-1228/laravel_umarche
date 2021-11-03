@@ -49,8 +49,6 @@
                                     checked} @endif>販売中</div>
                                     <div><input type="radio" name="is_selling" value="0" class="mr-2" @if($shop->is_selling === 0){
                                     checked} @endif>停止中</div>
-
-
                                 </div>
                                 <div class="p-2 w-full flex justify-around mt-4">
                                     <button type="button" onclick="location.href='{{ route('owner.shops.index')}}'"
